@@ -70,30 +70,16 @@ check_and_change_projections <- function(list_ofobj){
   }
 } 
 
-
+                        
+                        
+#### Example application:
 ## load sp objects used in exercise
-load("Soc413_Week3_Wednesday.RData")
+##load("Soc413_Week3_Wednesday.RData")
 
 ## create a list to feed the function
-list_wk3 <- list(block, tract, city, library)
-
-newlist_wk3 <-  check_and_change_projections(list_ofobj = list_wk3)
+## list_wk3 <- list(block, tract, city, library)
+## newlist_wk3 <-  check_and_change_projections(list_ofobj = list_wk3)
 
 ## check projections the same after we apply the function
-test_check <- check_and_change_projections(newlist_wk3)
-
-## try with different order
-## of objects in the list (this shows that the function could be made  
-## more efficient if we added a extra conditional to check which vector of indices
-## is longer but with a small number of polygons, the loss of efficiency 
-## isnt too much of a problem)
-list_wk3_orderdiff <- list(library, tract, city, block)
-newlist_wk3_orderdiff <-  check_and_change_projections(list_ofobj = list_wk3_orderdiff)
-
-## check projections the same
-test_check_orderdiff <- check_and_change_projections(newlist_wk3_orderdiff)
-
-
-
-
+## test_check <- check_and_change_projections(newlist_wk3)
 
